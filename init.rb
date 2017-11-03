@@ -1,8 +1,8 @@
 Redmine::Plugin.register :redmine_warehouse do
   name 'Redmine Warehouse plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
+  author 'Ziya Feyyaz'
+  description 'This is a plugin for managing products on warehouse'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'https://github.com/ZiyaFeyyaz/redmine_warehouse'
+  author_url 'https://github.com/ZiyaFeyyaz'
 end
