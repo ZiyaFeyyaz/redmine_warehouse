@@ -1,0 +1,18 @@
+<% if @issue.products.present? %>
+  <hr>
+  <div class="issue_products">
+    <div class="contextual">
+
+    </div>
+
+    <p><strong>Products</strong></p>
+    <div class="wiki">
+      <p>
+        <% @issue.products.each do |product| %>
+            <%= link_to product.name, product %>
+            <span> </span>
+        <% end %>
+      </p>
+    </div>
+  </div>
+<% end %>
