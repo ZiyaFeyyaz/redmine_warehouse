@@ -1,0 +1,5 @@
+one:
+  name: 'One'
+  price: 9.9
+  quantity: 5
+  issue_id: 1
