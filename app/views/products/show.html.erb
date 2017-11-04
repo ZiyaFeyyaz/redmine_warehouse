@@ -1,29 +1,37 @@
-<p id="notice"><%= notice %></p>
+<h2>Product Detail</h2>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="issue tracker-1 status-1 priority-2 priority-default created-by-me assigned-to-me details">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+  <div class="subject">
+    <div>
+      <h3><%= @product.name %></h3>
+    </div>
+  </div>
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @product.quantity %>
-</p>
+  <div class="attributes">
+    <div class="attribute">
+      <div class="label">Price:</div>
+      <div class="value"><%= @product.price %></div>
+    </div>
 
-<p>
-  <strong>Production Date:</strong>
-  <%= @product.production_date %>
-</p>
+    <div class="attribute">
+      <div class="label">Quantity:</div>
+      <div class="value"><%= @product.quantity %></div>
+    </div>
 
-<p>
-  <strong>Issue:</strong>
-  <%= @product.issue.subject %>
-</p>
+    <div class="attribute">
+      <div class="label">Production Date:</div>
+      <div class="value"><%= @product.production_date %></div>
+    </div>
+
+    <div class="attribute">
+      <div class="label">Issue:</div>
+      <div class="value"><%= link_to @product.issue.subject, issue_path(@product.issue) %></div>
+    </div>
+  </div>
+
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
